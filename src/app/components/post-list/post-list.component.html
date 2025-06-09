@@ -1,0 +1,10 @@
+<div>
+    @for (post of posts; track post) {
+        <div>
+            <h1 class="font-bold text-2xl">{{post.title}}</h1>
+            <p>userId: {{post.userId}}</p>
+            <p>Id: {{post.id}}</p>
+            <p>Body: {{post.body}}</p>
+        </div>
+    }
+</div>

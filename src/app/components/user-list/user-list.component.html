@@ -1,0 +1,30 @@
+<div class="pt-[100px]">
+    @for (user of users; track user) {
+        <ng-container>
+          <h1 class="text-4xl font-bold ">{{user.name}}</h1>
+          <p>Email: {{user.email}}</p>
+          <p>Phone: {{user.phone}}</p>
+          <p><strong>Website: {{user.website}}</strong></p>
+  
+          <h1 class="text-2xl">
+              Address:
+          </h1>
+          <ul>
+              <li>Street: {{user.address.street}}</li>
+              <li>Suite: {{user.address.suite}}</li>
+              <li>City: {{user.address.city}}</li>
+              <li>Zipcode: {{user.address.zipcode}}</li>
+              <li>
+                  Geo:
+                  <ul>
+                      <li>Lat: {{user.address.geo.lat}}</li>
+                      <li>Lng: {{user.address.geo.lng}}</li>
+                  </ul>
+              </li>
+          </ul>
+        </ng-container>
+      }
+  <button class="bg-gray-700 text-white px-5 ml-10">
+      <a routerLink="/">Back to home</a>
+  </button>
+</div>

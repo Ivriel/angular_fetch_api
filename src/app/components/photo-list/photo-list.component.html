@@ -1,0 +1,13 @@
+<div class="pt-[80px]">
+    @for (photo of photos; track photo) {
+        <div class="space-y-1 mt-10">
+            <h1 class="font-bold text-2xl">{{photo.title}}</h1>
+            <p>Album Id: {{photo.albumId}}</p>
+            <p>Id:{{photo.id}}</p>
+            <p>Url:{{photo.url}}</p>
+            <img [src]="photo.thumbnailUrl" alt="photo thumbnailUrl" />
+        </div>
+       
+    }
+    <h1>test</h1>
+</div>
