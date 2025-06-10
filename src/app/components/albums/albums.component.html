@@ -1,0 +1,10 @@
+<h1 class="pt-[100px] text-3xl font-bold ml-10 mt-10">Albums API</h1>
+
+@for (album of albums; track album.id) {
+    <div class="ml-10 mt-10 space-y-2 w-[50%]">
+        <h1 class="text-2xl font-bold">{{album.title}}</h1>
+        <p><strong>User ID: {{album.userId}}</strong></p>
+        <p>ID:{{album.id}}</p>
+        <hr/>
+    </div>
+}

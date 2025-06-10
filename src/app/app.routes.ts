@@ -5,6 +5,7 @@ import { PhotoListComponent } from '@components/photo-list/photo-list.component'
 import { CommentListComponent } from '@components/comment-list/comment-list.component';
 import { PostListComponent } from '@components/post-list/post-list.component';
 import { TodoListComponent } from '@components/todo-list/todo-list.component';
+import { AlbumsComponent } from '@components/albums/albums.component';
 
 export const routes: Routes = [
     {
@@ -32,5 +33,9 @@ export const routes: Routes = [
     {
         path:'todos',
         component:TodoListComponent
+    },
+    {
+        path:'albums',
+        component:AlbumsComponent
     }
 ];
