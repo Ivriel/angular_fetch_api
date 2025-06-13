@@ -5,11 +5,13 @@
         </a>
     </div>
     <ul class="flex items-center gap-5">
-        <li class="hover:text-gray-600"><a routerLink="/users">Users</a></li>
-        <li  class="hover:text-gray-600"><a routerLink="/comments">Comments</a></li>
-        <li  class="hover:text-gray-600"><a routerLink="/posts">Posts</a></li>
-        <li  class="hover:text-gray-600"><a routerLink="/photos">Photos</a></li>
-        <li  class="hover:text-gray-600"><a routerLink="/albums">Albums</a></li>
-        <li  class="hover:text-gray-600"><a routerLink="/todos">Todos</a></li>
+        <!-- Mencegah link untuk home ke higtlight secara default. pakai routerlinkactive options -->
+        <a [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" routerLink="/">Home</a>
+        <li class="hover:text-gray-600"><a routerLinkActive="active" routerLink="/users">Users</a></li>
+        <li  class="hover:text-gray-600"><a routerLinkActive="active" routerLink="/comments">Comments</a></li>
+        <li  class="hover:text-gray-600"><a routerLinkActive="active" routerLink="/posts">Posts</a></li>
+        <li  class="hover:text-gray-600"><a routerLinkActive="active" routerLink="/photos">Photos</a></li>
+        <li  class="hover:text-gray-600"><a routerLinkActive="active" routerLink="/albums">Albums</a></li>
+        <li  class="hover:text-gray-600"><a routerLinkActive="active" routerLink="/todos">Todos</a></li>
     </ul>
 </nav>

@@ -6,6 +6,8 @@ import { CommentListComponent } from '@components/comment-list/comment-list.comp
 import { PostListComponent } from '@components/post-list/post-list.component';
 import { TodoListComponent } from '@components/todo-list/todo-list.component';
 import { AlbumsComponent } from '@components/albums/albums.component';
+import { NotfoundComponent } from '@components/notfound/notfound.component';
+import { UserComponent } from '@components/user/user.component';
 
 export const routes: Routes = [
     {
@@ -37,5 +39,13 @@ export const routes: Routes = [
     {
         path:'albums',
         component:AlbumsComponent
+    },
+    {
+        path:'user/:id/:name/:email/:age/:died', // masukkan property apa saja yang ingin di oper lewat url
+        component:UserComponent
+    },
+    {
+        path:'**',
+        component:NotfoundComponent
     }
 ];

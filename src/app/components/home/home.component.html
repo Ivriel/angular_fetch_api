@@ -1,1 +1,7 @@
-<h1 class="pt-[100px]">Home Component</h1>
+<h1 class="pt-[100px] font-bold text-2xl ml-10 mt-10">User List</h1>
+
+<ul class="list-disc">
+    @for (user of users; track user.id) {
+        <li class="ml-10"><a routerLink="user/{{user.id}}/{{user.name}}/{{user.email}}/{{user.age}}/{{user.died}}">{{user.name}}</a></li>
+    }
+</ul>
